@@ -1,0 +1,84 @@
+:root {
+  --ion-color-primary: #3880ff;
+  --ion-color-text: #1e1e1e;
+  --ion-color-muted: #6b6b6b;
+  --ion-bg: #f9f9f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--ion-bg);
+  color: var(--ion-color-text);
+  line-height: 1.6;
+}
+
+/* Header stile Ionic */
+.app-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: env(safe-area-inset-top) 16px 12px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Contenuto */
+.content {
+  padding: 16px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  margin-bottom: 24px;
+  color: var(--ion-color-muted);
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+/* Link stile tappabile */
+a {
+  color: var(--ion-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.lang-switch {
+  position: absolute;
+  right: 16px;
+  top: calc(env(safe-area-inset-top) + 12px);
+  font-size: 14px;
+}
+
+.lang-switch a {
+  color: var(--ion-color-primary);
+  font-weight: 600;
+}
