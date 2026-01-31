@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – KeeLocal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+
+<header class="app-header">
+  <h1 id="title">Privacy Policy</h1>
+
+  <div class="lang-switch">
+    <a href="?lang=it">IT</a> | <a href="?lang=en">EN</a>
+  </div>
+</header>
+
+<main class="content">
+
+  <p class="subtitle" id="subtitle"></p>
+
+  <section>
+    <h3 id="dataCollectionTitle"></h3>
+    <p id="dataCollectionText"></p>
+  </section>
+
+  <section>
+    <h3 id="dataStorageTitle"></h3>
+    <p id="dataStorageText"></p>
+  </section>
+
+  <section>
+    <h3 id="userResponsibilityTitle"></h3>
+    <p id="userResponsibilityText"></p>
+  </section>
+
+  <section>
+    <h3 id="thirdPartyTitle"></h3>
+    <p id="thirdPartyText"></p>
+  </section>
+
+  <section>
+    <h3 id="dataSharingTitle"></h3>
+    <p id="dataSharingText"></p>
+  </section>
+
+  <section>
+    <h3 id="permissionsTitle"></h3>
+    <p id="permissionsText"></p>
+  </section>
+
+  <section>
+    <h3 id="ageRestrictionTitle"></h3>
+    <p id="ageRestrictionText"></p>
+  </section>
+
+  <section>
+    <h3 id="policyChangesTitle"></h3>
+    <p id="policyChangesText"></p>
+  </section>
+
+  <section>
+    <h3 id="contactTitle"></h3>
+    <p id="contactText"></p>
+  </section>
+
+</main>
+
+<script>
+  const translations = {
+    it: {
+      title: "Informativa sulla Privacy",
+      subtitle: "<strong>KeeLocal</strong> rispetta la privacy degli utenti e protegge i dati personali.",
+
+      dataCollectionTitle: "Raccolta dei dati",
+      dataCollectionText: "L’app non raccoglie dati personali identificativi.",
+
+      dataStorageTitle: "Conservazione dei dati",
+      dataStorageText: "Tutti i dati vengono salvati localmente sul dispositivo.",
+
+      userResponsibilityTitle: "Responsabilità dell’utente",
+      userResponsibilityText: "L’utente è responsabile della sicurezza del proprio dispositivo.",
+
+      thirdPartyTitle: "Servizi di terze parti",
+      thirdPartyText: "L’app non utilizza servizi di terze parti che raccolgano dati.",
+
+      dataSharingTitle: "Condivisione dei dati",
+      dataSharingText: "Nessun dato viene condiviso con terze parti.",
+
+      permissionsTitle: "Permessi",
+      permissionsText: "L’app richiede solo i permessi necessari al funzionamento.",
+
+      ageRestrictionTitle: "Limitazioni di età",
+      ageRestrictionText: "L’app non è destinata a utenti sotto i 13 anni.",
+
+      policyChangesTitle: "Modifiche all’informativa",
+      policyChangesText: "Questa informativa può essere aggiornata nel tempo.",
+
+      contactTitle: "Contatti",
+      contactText:
+        'Per informazioni scrivi a <a href="mailto:supporto@tuodominio.it">supporto@tuodominio.it</a> oppure visita <a href="https://test.it" target="_blank">www.test.it</a>.'
+    },
+
+    en: {
+      title: "Privacy Policy",
+      subtitle: "<strong>KeeLocal</strong> respects user privacy and protects personal data.",
+
+      dataCollectionTitle: "Data Collection",
+      dataCollectionText: "The app does not collect personally identifiable data.",
+
+      dataStorageTitle: "Data Storage",
+      dataStorageText: "All data is stored locally on the device.",
+
+      userResponsibilityTitle: "User Responsibility",
+      userResponsibilityText: "Users are responsible for securing their device.",
+
+      thirdPartyTitle: "Third-Party Services",
+      thirdPartyText: "The app does not use third-party services that collect data.",
+
+      dataSharingTitle: "Data Sharing",
+      dataSharingText: "No data is shared with third parties.",
+
+      permissionsTitle: "Permissions",
+      permissionsText: "The app only requests permissions strictly necessary.",
+
+      ageRestrictionTitle: "Age Restriction",
+      ageRestrictionText: "The app is not intended for users under 13.",
+
+      policyChangesTitle: "Policy Changes",
+      policyChangesText: "This policy may be updated over time.",
+
+      contactTitle: "Contact",
+      contactText:
+        'For inquiries email <a href="mailto:supporto@tuodominio.it">supporto@tuodominio.it</a> or visit <a href="https://test.it" target="_blank">www.test.it</a>.'
+    }
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const lang = params.get("lang") || "it";
+  const t = translations[lang] || translations.it;
+
+  document.documentElement.lang = lang;
+
+  Object.keys(t).forEach(key => {
+    const el = document.getElementById(key);
+    if (el) el.innerHTML = t[key];
+  });
+</script>
+
+</body>
+</html>
