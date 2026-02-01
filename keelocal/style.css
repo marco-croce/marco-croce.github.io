@@ -120,7 +120,7 @@ a:hover {
 
 @media (min-width: 1200px) {
   .content {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
   }
 }
