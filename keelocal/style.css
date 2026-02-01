@@ -77,6 +77,7 @@ a:hover {
   grid-column: 3;
   justify-self: end;
   font-size: 14px;
+  margin-right: 1rem;
 }
 
 .lang-switch a {
