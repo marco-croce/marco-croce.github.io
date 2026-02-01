@@ -10,7 +10,7 @@
 <body>
 
 <header class="app-header">
-  <h1 id="title">Privacy Policy</h1>
+  <h1 id="title"></h1>
 
   <div class="lang-switch">
     <a href="?lang=it">IT</a> | <a href="?lang=en">EN</a>
@@ -63,7 +63,11 @@
 
   <section>
     <h3 id="contactTitle"></h3>
-    <p id="contactText"></p>
+    <p id="contactText">
+      <a href="mailto:marcocroce.dev@gmail.com?subject=KeeLocal%20-%20Support%20Request">
+        marcocroce.dev@gmail.com
+      </a>
+    </p>
   </section>
 
 </main>
@@ -72,60 +76,66 @@
   const translations = {
     it: {
       title: "Informativa sulla Privacy",
-      subtitle: "<strong>KeeLocal</strong> rispetta la privacy degli utenti e protegge i dati personali.",
+      subtitle: "<strong>KeeLocal</strong> rispetta la privacy degli utenti.",
 
       dataCollectionTitle: "Raccolta dei dati",
-      dataCollectionText: "L’app non raccoglie dati personali identificativi.",
+      dataCollectionText: "L’applicazione non raccoglie o trasmette dati personali a sviluppatori, terze parti o servizi esterni.",
 
-      dataStorageTitle: "Conservazione dei dati",
-      dataStorageText: "Tutti i dati vengono salvati localmente sul dispositivo.",
+      dataStorageTitle: "Archiviazione dei dati",
+      dataStorageText: "Tutti i dati inseriti dall’utente (es. password, note o altre informazioni) vengono salvati esclusivamente sul dispositivo dell’utente. Nessun dato viene inviato a server remoti o condiviso con altri soggetti.",
 
       userResponsibilityTitle: "Responsabilità dell’utente",
-      userResponsibilityText: "L’utente è responsabile della sicurezza del proprio dispositivo.",
+      userResponsibilityText: "L’utente è responsabile della sicurezza del proprio dispositivo e della protezione dei dati memorizzati. In caso di perdita, furto o danneggiamento del dispositivo, lo sviluppatore non potrà essere ritenuto responsabile.",
 
       thirdPartyTitle: "Servizi di terze parti",
-      thirdPartyText: "L’app non utilizza servizi di terze parti che raccolgano dati.",
+      thirdPartyText: "L’app non utilizza servizi di terze parti per analisi, pubblicità o monitoraggio.",
 
       dataSharingTitle: "Condivisione dei dati",
-      dataSharingText: "Nessun dato viene condiviso con terze parti.",
+      dataSharingText: "L’applicazione non condivide alcun dato dell’utente con terze parti per finalità commerciali, pubblicitarie o analitiche.",
 
-      permissionsTitle: "Permessi",
-      permissionsText: "L’app richiede solo i permessi necessari al funzionamento.",
+      permissionsTitle: "Autorizzazioni",
+      permissionsText: "Le eventuali autorizzazioni richieste dall’app vengono utilizzate esclusivamente per consentire il corretto funzionamento delle funzionalità sul dispositivo dell’utente. Nessun dato personale viene raccolto, trasmesso o condiviso.",
 
-      ageRestrictionTitle: "Limitazioni di età",
-      ageRestrictionText: "L’app non è destinata a utenti sotto i 13 anni.",
+      ageRestrictionTitle: "Limitazione di età",
+      ageRestrictionText: "L’applicazione è destinata esclusivamente a utenti maggiorenni (18+). Non è progettata per l’utilizzo da parte di minori e non raccoglie consapevolmente dati personali di soggetti di età inferiore ai 18 anni.",
 
-      policyChangesTitle: "Modifiche all’informativa",
-      policyChangesText: "Questa informativa può essere aggiornata nel tempo."
+      policyChangesTitle: "Modifiche alla presente informativa",
+      policyChangesText: "Eventuali modifiche all’informativa saranno comunicate attraverso gli aggiornamenti dell’applicazione.",
+
+      contactTitle: "Contatti",
+      contactText: "Per qualsiasi informazione relativa al trattamento dei dati personali o per esercitare i diritti previsti dalla normativa vigente in materia di protezione dei dati personali, gli interessati possono contattarci al seguente indirizzo email:"
     },
 
     en: {
       title: "Privacy Policy",
-      subtitle: "<strong>KeeLocal</strong> respects user privacy and protects personal data.",
+      subtitle: "<strong>KeeLocal</strong> respects users privacy.",
 
       dataCollectionTitle: "Data Collection",
-      dataCollectionText: "The app does not collect personally identifiable data.",
+      dataCollectionText: "The application does not collect or transmit personal data to developers, third parties, or external services.",
 
       dataStorageTitle: "Data Storage",
-      dataStorageText: "All data is stored locally on the device.",
+      dataStorageText: "All data entered by the user (e.g., passwords, notes, or other information) is saved exclusively on the user's device. No data is sent to remote servers or shared with others.",
 
       userResponsibilityTitle: "User Responsibility",
-      userResponsibilityText: "Users are responsible for securing their device.",
+      userResponsibilityText: "The user is responsible for the security of their device and the protection of stored data. In case of loss, theft, or damage of the device, the developer cannot be held liable.",
 
       thirdPartyTitle: "Third-Party Services",
-      thirdPartyText: "The app does not use third-party services that collect data.",
+      thirdPartyText: "The app does not use third-party services for analytics, advertising, or tracking.",
 
       dataSharingTitle: "Data Sharing",
-      dataSharingText: "No data is shared with third parties.",
+      dataSharingText: "The application does not share any user data with third parties for commercial, advertising, or analytics purposes.",
 
       permissionsTitle: "Permissions",
-      permissionsText: "The app only requests permissions strictly necessary.",
+      permissionsText: "Any permissions requested by the app are used solely to enable core functionality on the user's device. No personal data is collected, transmitted, or shared.",
 
       ageRestrictionTitle: "Age Restriction",
-      ageRestrictionText: "The app is not intended for users under 13.",
+      ageRestrictionText: "This application is intended exclusively for adult users (18+). It is not designed for use by minors and does not knowingly collect personal data from individuals under the age of 18.",
 
-      policyChangesTitle: "Policy Changes",
-      policyChangesText: "This policy may be updated over time."
+      policyChangesTitle: "Changes to this Policy",
+      policyChangesText: "Any changes to this policy will be communicated through app updates.",
+
+      contactTitle: "Contact",
+      contactText: "For any information regarding the processing of personal data or to exercise the rights provided under applicable data protection laws, data subjects may contact us at the following email address:"
     }
   };
 
