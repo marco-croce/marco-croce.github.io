@@ -26,12 +26,12 @@ body {
   border-bottom: 1px solid #e5e5e5;
 
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
   align-items: center;
 }
 
 .app-header h1 {
-  grid-column: 2;
+  grid-column: 1;
   margin: 0;
   font-size: 20px;
   font-weight: 600;
